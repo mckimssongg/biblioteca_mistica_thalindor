@@ -1,8 +1,19 @@
-# React + Vite
+# Requerimientos para el frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Tener node.js instalado (18.18.0)
+2. Tener npm instalado (9.7.2)
 
-Currently, two official plugins are available:
+## Pasos a seguir para levantar el frontend
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Desde la raíz del proyecto recien clonado moverlo a la carpeta "client_app"
+2. Instalar las dependecias del proyecto
+
+   ```bash
+   npm install
+   ```
+3. Ejecutar el proyecto
+
+   ```bash
+   npm run dev
+   ```
+4. Crtl + clic enlace (port 5173)
