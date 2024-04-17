@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-const RegisterLink = ({ href, children, className }) => {
+const RegisterEnlace = ({ href, children, className }) => {
   return (
     <p>
       <a href={href} className={`link-primary ${className}`}>
@@ -10,4 +10,4 @@ const RegisterLink = ({ href, children, className }) => {
   );
 };
 
-export default RegisterLink;
+export default RegisterEnlace;

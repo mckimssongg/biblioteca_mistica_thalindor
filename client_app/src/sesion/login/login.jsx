@@ -3,7 +3,8 @@ import IconUsuario from '../../componentes/iconos/iconUsuario';
 import Input from '../../componentes/input';
 import '../style.css';
 import Button from '../../componentes/button';
-import RegisterLink from '../../componentes/link';
+import RegisterEnlace from '../../componentes/link';
+
 
 export default function Login() {
   return (
@@ -28,12 +29,13 @@ export default function Login() {
           Iniciar sesión
         </Button>
         
-        <RegisterLink href="/registro" className="link">
-          Regístrate aquí
-        </RegisterLink>
-    
+        <RegisterEnlace to="/registro" className="link">
+          Registrarse
+        </RegisterEnlace>
+
+
       </div>
         
     </div>
-  )
+  );
 }

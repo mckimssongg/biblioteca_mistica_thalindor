@@ -2,6 +2,8 @@ import IconUsuarioAdd from '../../componentes/iconos/iconUsuarioAdd';
 import Input from '../../componentes/input';
 import '../style.css';
 import Button from '../../componentes/button';
+import { Link } from 'react-router-dom';
+//import Login from '../login/login';
 
 export default function Registration() {
   return (
@@ -32,6 +34,10 @@ export default function Registration() {
         <Button className="boton_relleno">
           Registrar
         </Button>
+
+        <Link to="/" className="link">
+          Volver al inicio
+        </Link>
     
       </div>
         
