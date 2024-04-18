@@ -1,17 +1,17 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Login from './sesion/login/login';
 import Registration from './sesion/registration/registration'; 
 
-const Routes = () => {
+const Rutas = () => {
   return (
     <Router>
-      <Switch>
-        <Route path="/" exact component={Login} />
-        <Route path="/registro" component={Registration} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/registro" element={<Registration />} />
+      </Routes>
     </Router>
   );
 }
 
-export default Routes;
+export default Rutas;

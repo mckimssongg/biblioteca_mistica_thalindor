@@ -1,9 +1,10 @@
-import Routes from './Routes';
+import Rutas from './Routes';
+//import Menu from './menu/menu';
 
 function App() {
   return (
     <>
-      <Routes />
+      <Rutas />
     </>
   );
 }
