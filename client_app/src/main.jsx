@@ -9,6 +9,7 @@ import Login from './views/Login/Login.jsx';
 import MainLayout from './layouts/MainLayout.jsx';
 import Home from './views/Home/Home.jsx';
 import SearchPage from './views/SearchPage/SearchPage.jsx';
+import Registration from './views/Registration/Registration.jsx';
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,11 @@ const router = createBrowserRouter([
       {
         path: "/search",
         element: <SearchPage />,
-      }
+      },
+      {
+        path: "/registration",
+        element: <Registration />,
+      },
     ],
   },
   {
