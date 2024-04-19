@@ -18,6 +18,7 @@ import ListCategoryFinancial from './views/ListCategoryBooks/ListCategoryFinanci
 import ListCategoryHealth from './views/ListCategoryBooks/ListCategoryHealth.jsx';
 import ListCategoryCrimes from './views/ListCategoryBooks/ListCategoryCrimes.jsx';
 import ListCategoryGame from './views/ListCategoryBooks/ListCategoryGame.jsx';
+import ManagePersonalLibrary from './views/ManagePersonalLibrary/ManagePersonalLibrary.jsx';
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
   {
     path: "/manageLibrery",
     element: <ManageLibreby />,
+  },
+  {
+    path: "/managePersonalLibrary",
+    element: <ManagePersonalLibrary />,
   },
   {
     path: "/categoryLove",

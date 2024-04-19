@@ -30,7 +30,7 @@ export default function Navar() {
                             <Link className="nav-link" to="/">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/manageLibrary">Gestionar Biblioteca</Link>
+                            <Link className="nav-link" to="/managePersonalLibrary">Gestionar Biblioteca</Link>
                         </li>
                     </ul>
                 </div>
