@@ -1,0 +1,55 @@
+.container {
+    background-color: coral;
+    max-width: 100rem;
+    width: 72rem; /* Ajusta el ancho al 100% del contenedor */
+    place-items: center;
+    height: 27rem; /* Ajusta la altura */
+  }
+  
+  .grid-container {
+    background-color: aliceblue;
+   
+    width: 70rem;
+    height: 26rem;
+    justify-content: flex-start;
+    display: grid;
+    grid-template-columns:auto 1fr; /* Define dos columnas */
+    gap: 10px;
+    overflow: hidden;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+.center{
+    align-items: center;
+    justify-content: center;
+}
+
+.content-Gender {
+  grid-column: 2; /* Establece que el elemento esté en la segunda fila */
+  background-color: cadetblue;
+  width:26rem;
+  height: 5rem;
+  align-self: start;
+  margin-top: -188px;
+}
+
+.color{
+  background-color: violet;
+}
+
+.description{
+  height: 9rem;
+}
+
+.content-Information {
+  grid-column: 2; /* Establece que el elemento esté en la segunda fila */
+  background-color: rgb(95, 114, 160);
+  width:57rem;
+  height: 4rem;
+  align-self: start;
+  margin-top: -145px;
+  display: flex;
+  gap:10px;
+}

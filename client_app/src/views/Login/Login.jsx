@@ -12,7 +12,7 @@ function Login() {
         <div className="contenedor">
           <IconUsuario/>
 
-          <h3>Sign In</h3>
+          <h3 className='h3'>Sign In</h3>
           <Input
             name={"Correo eletrónico"}
             type={"email"}

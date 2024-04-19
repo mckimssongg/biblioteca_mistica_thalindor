@@ -13,7 +13,7 @@ export default function Registration() {
 
           <IconUsuarioAdd/>
 
-          <h3>Registro</h3>
+          <h3 className='h3'>Registro</h3>
           <Input
             name={"Nombre"}
             type={"text"}

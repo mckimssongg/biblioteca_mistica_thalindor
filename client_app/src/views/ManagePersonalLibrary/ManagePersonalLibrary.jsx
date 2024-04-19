@@ -8,14 +8,17 @@ export default function ManagePersonalLibrary() {
   return (
     <>
         <Navar />
-        <div className='content-container'>
-            <h1>
-                <strong>Tu lista</strong>
-            </h1>
+
+        <div className='grid-container'>
+          <h1 className='title'>
+            <strong>Tu lista</strong>
+          </h1>
+          
+          <div >
             <Grid/>
+          </div>
 
         </div>
-      
     </>
   )
 }

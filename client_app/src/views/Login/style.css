@@ -23,25 +23,27 @@ body {
     gap: 20px;
 }
 
-h3{
+.h3{
     color: #8B4513;
 
 }
 
-input {
+.input {
     border: 1px solid #8B4513; /* Borde delgado */
     border-radius: 10px; /* Bordes redondeados */
     background-color: transparent; /* Sin fondo */
     color: #8B4513; /* Color de letra */
     padding: 5px 10px; /* Espaciado interno */
+    font-size: 16px; /* tamayo de letra*/
+    width: 90%; /* Ancho del input al 100% */
 }
 
-input:focus {
+.input:focus {
     outline: none; /* Quita el contorno predeterminado */
     box-shadow: 0 0 5px #8B4513; /* Sombra al enfocar */
 }
 
-input::placeholder{
+.input::placeholder{
     color: #8B4513;
 }
 

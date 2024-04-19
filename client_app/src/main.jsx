@@ -19,6 +19,8 @@ import ListCategoryHealth from './views/ListCategoryBooks/ListCategoryHealth.jsx
 import ListCategoryCrimes from './views/ListCategoryBooks/ListCategoryCrimes.jsx';
 import ListCategoryGame from './views/ListCategoryBooks/ListCategoryGame.jsx';
 import ManagePersonalLibrary from './views/ManagePersonalLibrary/ManagePersonalLibrary.jsx';
+import SpecificBook from './views/SpecificBook/SpecificBookCaroline.jsx';
+import SpecificBookCaroline from './views/SpecificBook/SpecificBookCaroline.jsx';
 
 const router = createBrowserRouter([
   {
@@ -50,6 +52,10 @@ const router = createBrowserRouter([
   {
     path: "/managePersonalLibrary",
     element: <ManagePersonalLibrary />,
+  },
+  {
+    path: "/specificBoock/Caroline",
+    element: <SpecificBookCaroline />,
   },
   {
     path: "/categoryLove",
