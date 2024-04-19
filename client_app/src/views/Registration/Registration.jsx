@@ -4,7 +4,7 @@ import './style.css'
 import Input from '../../components/UI/Input/Input'
 import Button from '../../components/UI/Button/Button'
 import CustomLink from '../../components/UI/CustomLink/CustomLink'
-import IconUsuarioAdd from '../../components/UI/Iconos/iconUsuarioAdd'
+import IconUsuarioAdd from '../../components/UI/Iconos/Usuario/iconUsuarioAdd'
 
 export default function Registration() {
   return (

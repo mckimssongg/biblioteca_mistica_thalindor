@@ -3,7 +3,7 @@ import './style.css'
 import Input from '../../components/UI/Input/Input'
 import Button from '../../components/UI/Button/Button'
 import CustomLink from '../../components/UI/CustomLink/CustomLink'
-import IconUsuario from '../../components/UI/Iconos/iconUsuario'
+import IconUsuario from '../../components/UI/Iconos/Usuario/iconUsuario'
 
 function Login() {
   return (
