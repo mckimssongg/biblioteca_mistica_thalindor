@@ -66,73 +66,8 @@ export default function Grid() {
         </Col>
       </Row>
 
-      <Row className='row-cols-auto'>
-        <Col>
-          <Card 
-            className={"card-container"}
-            icon={<Boocks/>}
-            title='Otro título'
-            bodyText='Otra descripción'
-            redirectUrl='/otraUrl'
-          />
-        </Col>
-
-        <Col className='col-auto'>
-          <Delete/>
-          <View/>
-        </Col>
-      </Row>
-
-      <Row className='row-cols-auto'>
-        <Col>
-          <Card 
-            className={"card-container"}
-            icon={<Boocks/>}
-            title='Otro título'
-            bodyText='Otra descripción'
-            redirectUrl='/otraUrl'
-          />
-        </Col>
-
-        <Col className='col-auto'>
-          <Delete/>
-          <View/>
-        </Col>
-      </Row>
-
-      <Row className='row-cols-auto'>
-        <Col>
-          <Card 
-            className={"card-container"}
-            icon={<Boocks/>}
-            title='Otro título'
-            bodyText='Otra descripción'
-            redirectUrl='/otraUrl'
-          />
-        </Col>
-
-        <Col className='col-auto'>
-          <Delete/>
-          <View/>
-        </Col>
-      </Row>
+    
       
-      <Row className='row-cols-auto'>
-        <Col>
-          <Card 
-            className={"card-container"}
-            icon={<Boocks/>}
-            title='Otro título'
-            bodyText='Otra descripción'
-            redirectUrl='/otraUrl'
-          />
-        </Col>
-
-        <Col className='col-auto'>
-          <Delete/>
-          <View/>
-        </Col>
-      </Row>
     </Container>
   );
 }

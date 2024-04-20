@@ -9,6 +9,12 @@ import IconUsuarioAdd from '../../components/UI/Iconos/Usuario/iconUsuarioAdd'
 export default function Registration() {
   return (
     <form>
+        <a href="/Login">
+          <button type="button" className="btn-close ms-2 mb-1" data-bs-dismiss="toast" aria-label="Close" _mstaria-label="59709">
+            <span aria-hidden="true"></span>
+          </button>
+        </a>
+
         <div className="contenedor">
 
           <IconUsuarioAdd/>
