@@ -1,5 +1,4 @@
 .container {
-  background-color: coral;
   max-width: 100rem;
   width: 72rem; /*  ancho del contenedor */
   place-items: center;
@@ -7,7 +6,6 @@
 }
   
 .grid-container {
-  background-color: rgb(214, 233, 249);
   width: 70rem;
   height: 26rem;
   justify-content: flex-start;
@@ -21,25 +19,18 @@
 .content-Gender {
   grid-column: 2; /*  elemento esté en la segunda fila */
   grid-row: 2;
-  background-color: cadetblue;
   width:26rem;
-  
   align-self: start;
-   
 }
 
 .content-description{
-
   grid-column: 2;
   grid-row: 1;
-  background-color: violet;
 }
 
 .content-information {
   grid-column: 2; /*  elemento esté en la segunda fila */
-  background-color: rgb(95, 114, 160);
   width:57rem;
- 
   align-self: start;
   display: flex;
   
@@ -54,10 +45,4 @@
   font-size: 14px;
   border: 1px solid #ccc;
   cursor: pointer;
-  background-color: transparent;
-}
-
-.grid-cell {
-   /* Color de fondo semitransparente */
-  border: 1px solid black; /* Borde para visualización */
 }
