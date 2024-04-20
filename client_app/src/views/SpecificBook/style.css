@@ -1,19 +1,22 @@
 .container {
-  background-color: coral;
-  max-width: 100rem;
-  width: 72rem; /*  ancho del contenedor */
-  place-items: center;
-  height: 27rem; /* altura */
+  max-width: 80%;
+  width:90%; /*  ancho del contenedor */
+  height: 50%; /* altura */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
   
-.grid-container {
-  background-color: rgb(214, 233, 249);
-  width: 70rem;
+.grid-container1 {
+  width: 60rem;
   height: 26rem;
-  justify-content: flex-start;
   display: grid;
-  grid-template-columns:auto 1fr; /* Define dos columnas */
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.grid-container2 {
+  display: grid;
   gap: 10px;
   overflow: hidden;
 }
@@ -21,28 +24,25 @@
 .content-Gender {
   grid-column: 2; /*  elemento esté en la segunda fila */
   grid-row: 2;
-  background-color: cadetblue;
   width:26rem;
-  
   align-self: start;
-   
 }
 
 .content-description{
-
+  max-width: 100%;
   grid-column: 2;
   grid-row: 1;
-  background-color: violet;
+  word-wrap: break-word;
+  white-space: normal;
+  font-size: 19px;
+  text-align: justify;
 }
 
 .content-information {
   grid-column: 2; /*  elemento esté en la segunda fila */
-  background-color: rgb(95, 114, 160);
-  width:57rem;
- 
   align-self: start;
   display: flex;
-  
+  gap: 20px;
 }
 
 .content-follow-button {
@@ -54,10 +54,4 @@
   font-size: 14px;
   border: 1px solid #ccc;
   cursor: pointer;
-  background-color: transparent;
-}
-
-.grid-cell {
-   /* Color de fondo semitransparente */
-  border: 1px solid black; /* Borde para visualización */
 }
