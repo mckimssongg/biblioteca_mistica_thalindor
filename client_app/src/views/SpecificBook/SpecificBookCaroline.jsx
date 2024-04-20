@@ -13,7 +13,6 @@ import Follow from '../../components/ComponentsSpecificBook/FollowButton/Follow'
 export default function SpecificBookCaroline() {
   return (
    <>
-      <Navar/>
       <div className='container'>
         <div className="grid-container1">
           <Card

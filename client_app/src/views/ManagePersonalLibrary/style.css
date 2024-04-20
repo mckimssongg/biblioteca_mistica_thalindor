@@ -8,11 +8,7 @@
 }
 .grid-container {
   height: 60rem; /* Establece un alto fijo para el contenedor */
-  overflow-y: scroll; /* Muestra el scroll vertical */
+  /* Muestra el scroll vertical */
   width: calc(100% + 110px); /* Ajusta el ancho para compensar el scroll vertical */
   margin-right: -15px; /* Corrige el desplazamiento horizontal debido al scroll vertical */
-}
-
-body {
-  overflow: hidden; /* Oculta el scroll predeterminado del navegador */
 }
