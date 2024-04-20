@@ -1,0 +1,14 @@
+.content-container {
+  padding-top: 3rem; /* Ajusta el espacio entre el Navbar y el h1 */
+  padding-left: 1rem; /* Aplica un margen izquierdo */
+}
+
+.title {
+  margin-top:15rem; /* Ajusta la posición vertical del h1 */
+}
+.grid-container {
+  height: 60rem; /* Establece un alto fijo para el contenedor */
+  /* Muestra el scroll vertical */
+  width: calc(100% + 110px); /* Ajusta el ancho para compensar el scroll vertical */
+  margin-right: -15px; /* Corrige el desplazamiento horizontal debido al scroll vertical */
+}

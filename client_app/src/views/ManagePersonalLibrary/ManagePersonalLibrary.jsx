@@ -1,6 +1,9 @@
 import React from 'react'
 
-function ManagePersonalLibrary() {
+import '../ManagePersonalLibrary/style.css'
+import Grid from '../../components/UI/Grid/Grid'
+
+export default function ManagePersonalLibrary() {
   return (
     <>
       <h1>Tú lista</h1>
