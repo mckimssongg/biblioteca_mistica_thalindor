@@ -6,11 +6,11 @@ const Card = ({ className, icon, title, bodyText, redirectUrl }) => {
     <a href={redirectUrl} className={`card-link ${className}`} target="_blank" rel="noopener noreferrer">
       <div className={`card-container ${className}`}>
         {icon && (
-          <div className="card-icon">
+          <div className="card-icon center">
             {icon}
           </div>
         )}
-        <div className="card-body">
+        <div className="card-body link">
           <h5 className="card-title">{title}</h5>
           <p className="card-text">{bodyText}</p>
         </div>
