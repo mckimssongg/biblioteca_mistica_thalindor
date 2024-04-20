@@ -35,6 +35,10 @@ const router = createBrowserRouter([
         path: "/search",
         element: <SearchPage />,
       },
+      {
+        path: "/managePersonalLibrary",
+        element: <ManagePersonalLibrary />,
+      },
     ],
   },
   {
@@ -44,14 +48,6 @@ const router = createBrowserRouter([
   {
     path: "/registration",
     element: <Registration />,
-  },
-  {
-    path: "/manageLibrery",
-    element: <ManageLibreby />,
-  },
-  {
-    path: "/managePersonalLibrary",
-    element: <ManagePersonalLibrary />,
   },
   {
     path: "/specificBoock/Caroline",

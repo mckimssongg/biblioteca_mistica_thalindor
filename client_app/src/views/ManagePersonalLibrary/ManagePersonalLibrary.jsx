@@ -7,8 +7,6 @@ import Grid from '../../components/UI/Grid/Grid'
 export default function ManagePersonalLibrary() {
   return (
     <>
-        <Navar />
-
         <div className='grid-container'>
           <h1 className='title'>
             <strong>Tu lista</strong>
