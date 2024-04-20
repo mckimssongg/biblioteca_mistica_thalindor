@@ -7,6 +7,7 @@ import Navar from '../../components/UI/Navar/Navar';
 import Description from '../../components/ComponentsSpecificBook/Description/Description';
 import Gender from '../../components/ComponentsSpecificBook/Gender/Gender';
 import Information from '../../components/ComponentsSpecificBook/Information/Information';
+import Follow from '../../components/ComponentsSpecificBook/FollowButton/Follow';
 
 
 export default function SpecificBookCaroline() {
@@ -14,7 +15,7 @@ export default function SpecificBookCaroline() {
    <>
       <Navar/>
       <div className='container'>
-        <div className="grid-container">
+        <div className="grid-container grid-cell">
           <Card
             className={"card link center"}
             icon={<ISBN/>}
@@ -23,12 +24,12 @@ export default function SpecificBookCaroline() {
             redirectUrl='https://corazondeartista.wordpress.com/wp-content/uploads/2014/09/gaimanneil-coraline.pdf'
           />
           <Description
-            className={"color description"}
+            className={"content-description grid-cell"}
             description='Coraline Jones y sus padres "workaholics" se mudan a una vieja casa que ha sido dividida en distintos pisos de departamentos. Entre los inquilinos están las señoritas Spink y Forcible, dos mujeres ancianas retiradas de la farándula del teatro, y el Señor Bob, inicialmente referido a él como "el viejo loco de arriba”, que se define como entrenador de un circo de ratones. El piso junto al de Coraline está deshabitado, y una puerta enlaza ambos departamentos, pero esta está bloqueada por ladrillos una vez abierta.'
           />       
 
           <Gender
-            className={"content-Gender"}
+            className={"content-Gender grid-cell"}
             text1={"Fantasía oscura"}
             text2={"Terror"}
             text3={"Cuento de hada"}
@@ -36,12 +37,14 @@ export default function SpecificBookCaroline() {
           />
 
           <Information
-            className={"content-Information"}
+            className={"content-information grid-cell"}
             n_pag={208}
             editorial={"HarperCollins; Reprint,Anniversary edición (24 Abril 2012)"}
             idiomas={"Inglés"}
             fecha_publicacion={"2 de julio de 2002"}
           />
+
+          <Follow className={"content-follow-button grid-cell"}/>
 
         </div>
       </div>
