@@ -15,7 +15,7 @@ function Home() {
       <div className='content-container'>
 
       <div>
-        <h1>Géneros</h1>
+        <h1>Géneros: </h1>
         <CarouselBooksCategory/>
       </div>
       
