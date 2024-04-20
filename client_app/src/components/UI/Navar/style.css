@@ -1,0 +1,30 @@
+body{
+  background-color: #F5F5DC;;
+}
+
+.custom-toggler-icon {
+  border: none; /* Elimina los bordes */
+  cursor: pointer; /* Muestra el cursor como un puntero */
+  padding: 10px; /* Agrega relleno para dar espacio alrededor del icono */
+  margin-left: 10px; /* Agrega espacio en el lado izquierdo */
+ 
+}
+
+.custom-nav-link {
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: #728371; /* Cambia el color del texto */
+  font-size: 1.5rem; /* Cambia el tamaño del icono */
+  margin-right: 1rem; /* Agrega espacio al lado derecho */
+}
+
+.custom-nav-link:focus {
+  outline: none; /* Elimina el contorno al hacer foco */
+}
+
+.navbar {
+  position: fixed; /* Establece la posición fija */
+  top: 0; /* Fija el Navbar en la parte superior */
+  width: 100%; /* Ancho completo */
+  z-index: 1000; /* Asegura que el Navbar esté por encima del resto del contenido */
+}
+

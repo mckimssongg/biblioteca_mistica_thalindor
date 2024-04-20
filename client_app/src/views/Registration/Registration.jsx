@@ -4,7 +4,7 @@ import './style.css'
 import Input from '../../components/UI/Input/Input'
 import Button from '../../components/UI/Button/Button'
 import CustomLink from '../../components/UI/CustomLink/CustomLink'
-import IconUsuarioAdd from '../../components/UI/Iconos/iconUsuarioAdd'
+import IconUsuarioAdd from '../../components/UI/Iconos/Usuario/iconUsuarioAdd'
 
 export default function Registration() {
   return (
@@ -13,7 +13,7 @@ export default function Registration() {
 
           <IconUsuarioAdd/>
 
-          <h3>Registro</h3>
+          <h3 className='h3'>Registro</h3>
           <Input
             name={"Nombre"}
             type={"text"}

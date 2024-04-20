@@ -3,7 +3,7 @@ import './style.css'
 import Input from '../../components/UI/Input/Input'
 import Button from '../../components/UI/Button/Button'
 import CustomLink from '../../components/UI/CustomLink/CustomLink'
-import IconUsuario from '../../components/UI/Iconos/iconUsuario'
+import IconUsuario from '../../components/UI/Iconos/Usuario/iconUsuario'
 
 function Login() {
   return (
@@ -12,7 +12,7 @@ function Login() {
         <div className="contenedor">
           <IconUsuario/>
 
-          <h3>Sign In</h3>
+          <h3 className='h3'>Sign In</h3>
           <Input
             name={"Correo eletrónico"}
             type={"email"}

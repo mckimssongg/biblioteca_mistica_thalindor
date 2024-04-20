@@ -1,10 +1,15 @@
 import PropTypes from 'prop-types';
+import '../Card/style.css';
 
-const Card = ({ imageUrl, title, bodyText, redirectUrl }) => {
+const Card = ({ className, icon, title, bodyText, redirectUrl }) => {
   return (
-    <a href={redirectUrl}>
-      <div className="card" style={{ width: '18rem' }}>
-        <img src={imageUrl} className="card-img-top" alt="Card image" />
+    <a href={redirectUrl} className={`card-link ${className}`} target="_blank" rel="noopener noreferrer">
+      <div className={`card-container ${className}`}>
+        {icon && (
+          <div className="card-icon">
+            {icon}
+          </div>
+        )}
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
           <p className="card-text">{bodyText}</p>
@@ -15,10 +20,15 @@ const Card = ({ imageUrl, title, bodyText, redirectUrl }) => {
 };
 
 Card.propTypes = {
-  imageUrl: PropTypes.string.isRequired,
+  className: PropTypes.string, 
+  icon: PropTypes.element,
   title: PropTypes.string.isRequired,
   bodyText: PropTypes.string.isRequired,
   redirectUrl: PropTypes.string.isRequired,
+};
+
+Card.defaultProps = {
+  className: 'h1-color', 
 };
 
 export default Card;
