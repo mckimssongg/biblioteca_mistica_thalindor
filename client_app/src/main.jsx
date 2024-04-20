@@ -12,15 +12,7 @@ import Home from './views/Home/Home.jsx';
 import SearchPage from './views/SearchPage/SearchPage.jsx';
 import Registration from './views/Registration/Registration.jsx';
 import ErrorPage from './views/ErrorPage/ErrorPage.jsx';
-import ManageLibreby from './views/ManageLibrary/ManageLibreby.jsx';
-import ListCategoryLove from './views/ListCategoryBooks/ListCategoryLove.jsx';
-import ListCategoryFinancial from './views/ListCategoryBooks/ListCategoryFinancial.jsx';
-import ListCategoryHealth from './views/ListCategoryBooks/ListCategoryHealth.jsx';
-import ListCategoryCrimes from './views/ListCategoryBooks/ListCategoryCrimes.jsx';
-import ListCategoryGame from './views/ListCategoryBooks/ListCategoryGame.jsx';
 import ManagePersonalLibrary from './views/ManagePersonalLibrary/ManagePersonalLibrary.jsx';
-import SpecificBook from './views/SpecificBook/SpecificBookCaroline.jsx';
-import SpecificBookCaroline from './views/SpecificBook/SpecificBookCaroline.jsx';
 
 const router = createBrowserRouter([
   {
@@ -48,30 +40,6 @@ const router = createBrowserRouter([
   {
     path: "/registration",
     element: <Registration />,
-  },
-  {
-    path: "/specificBoock/Caroline",
-    element: <SpecificBookCaroline />,
-  },
-  {
-    path: "/categoryLove",
-    element: <ListCategoryLove />,
-  },
-  {
-    path: "/categoryFinancial",
-    element: <ListCategoryFinancial />,
-  },
-  {
-    path: "/categoryHealth",
-    element: <ListCategoryHealth />,
-  },
-  {
-    path: "/categoryCrimes",
-    element: <ListCategoryCrimes />,
-  },
-  {
-    path: "/categoryGames",
-    element: <ListCategoryGame />,
   },
   {
     path: "*",

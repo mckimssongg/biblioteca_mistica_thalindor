@@ -1,6 +1,5 @@
 import React from 'react'
-
-import './style.css'
+import './Registration.css'
 import Input from '../../components/UI/Input/Input'
 import Button from '../../components/UI/Button/Button'
 import CustomLink from '../../components/UI/CustomLink/CustomLink'

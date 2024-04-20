@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react'
 import { Outlet } from 'react-router-dom'
-import Header from '../components/Header/Header'
+import Navar from './Navar/Navar'
+
 function MainLayout() {
   return (
     <Fragment>
-        <Header />
-        <Outlet /> {/* hijos de MainLayout */}
+        <Navar />
+        <Outlet /> 
     </Fragment> 
   )
 }
