@@ -37,9 +37,9 @@ export default function Navar() {
         </Collapse>
 
         <div className="d-flex ms-auto align-items-center">
-            <form className="d-flex me-5">
+            <form className="d-flex me-5" method='#'>
                 <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" name="search" style={{ width: '650px' }} />
-                <button className="btn btn-outline-success" type="submit">Buscar</button>
+                <button className="btn btn-outline-success" type='buttons' onClick={()=> window.location.href = `http://localhost:5173/search`}>Buscar</button>
             </form>
 
             <Link to="/login" className="custom-nav-link">
