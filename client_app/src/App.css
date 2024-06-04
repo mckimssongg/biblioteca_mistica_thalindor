@@ -8,3 +8,7 @@ body {
     height: 100vh;
     background-color: #F5F5DC;
 }
+
+#root {
+    height: 100%;
+}

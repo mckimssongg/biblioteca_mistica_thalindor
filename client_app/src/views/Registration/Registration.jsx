@@ -1,41 +1,39 @@
-import React from 'react'
-import './Registration.css'
-import Input from '../../components/UI/Input/Input'
-import Button from '../../components/UI/Button/Button'
-import CustomLink from '../../components/UI/CustomLink/CustomLink'
-import IconUsuarioAdd from '../../components/UI/Iconos/Usuario/iconUsuarioAdd'
+import React from 'react';
+import './Registration.css';
+import Input from '../../components/UI/Input/Input';
+import Button from '../../components/UI/Button/Button';
+import CustomLink from '../../components/UI/CustomLink/CustomLink';
+import IconUsuario from '../../components/UI/Iconos/Usuario/iconUsuario';
 
-export default function Registration() {
+function Registration() {
   return (
-    <div className='registration-container'>
-      <form > 
-        <div className="contenedor">
-          <IconUsuarioAdd/>
-          <h3 className='h3'>Registro</h3>
+    <div className="registration-container">
+      <form>
+        <div className="common-container">
+          <IconUsuario />
+          <h3 className="h3">Register</h3>
           <Input
-            name={"Nombre"}
-            type={"text"}
-            placeholder={"Ingrese su nombre"}
-            className={"input"}
+            name="Correo electrónico"
+            type="email"
+            placeholder="Ingrese su correo electrónico"
+            className="input"
           />
           <Input
-            name={"Correo electrónico"}
-            type={"email"}
-            placeholder={"Ingrese su correo electrónico"}
-            className={"input"}
+            name="Contraseña"
+            type="password"
+            className="input"
+            placeholder="Ingrese su contraseña"
           />
-          <Input
-            name={"Contraseña"}
-            type={"password"}
-            className={"input"}
-            placeholder={"Ingrese su contraseña"}          
-          />
-          <Button type={"submit"} className={"custom-button"}>
-            Registrarse
+          <Button type="submit" className="custom-button">
+            Registrar
           </Button>
-          <CustomLink to="/login" className={"custom-link"}>Regresar</CustomLink>
+          <CustomLink to="/login" className="custom-link">
+            Ingresar
+          </CustomLink>
         </div>
       </form>
     </div>
-  )
+  );
 }
+
+export default Registration;

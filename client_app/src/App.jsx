@@ -6,8 +6,6 @@ import SpinnerComponent from './components/Spinner/SpinnerComponent'
 function App() {
   useEffect(() => {
     import('./App.css');
-    import('./views/Login/Login.css');
-    import('./views/Registration/Registration.css');
   }, []);
   return (
     <BrowserRouter>
