@@ -5,7 +5,7 @@ import SpinnerComponent from './components/Spinner/SpinnerComponent'
 
 function App() {
   useEffect(() => {
-    import('./App.css');
+    import('./theme/main.scss');
   }, []);
   return (
     <BrowserRouter>
