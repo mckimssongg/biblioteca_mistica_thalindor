@@ -1,3 +1,4 @@
+
 import MainLayout from './layouts/MainLayout.jsx';
 import { Login, Home, SearchPage, Registration, ErrorPage, ManagePersonalLibrary } from './views';
 
@@ -18,6 +19,7 @@ export const routes = [
           path: "/managePersonalLibrary",
           element: <ManagePersonalLibrary />,
         },
+        
       ],
     },
     {
