@@ -7,11 +7,18 @@ import IconUsuario from '../../components/UI/Iconos/Usuario/iconUsuario';
 
 function Registration() {
   return (
-    <div className="registration-container">
-      <form>
-        <div className="common-container">
-          <IconUsuario />
-          <h3 className="h3">Register</h3>
+    <form>
+        <a href="/Login">
+          <button type="button" className="btn-close ms-2 mb-1" data-bs-dismiss="toast" aria-label="Close" _mstaria-label="59709">
+            <span aria-hidden="true"></span>
+          </button>
+        </a>
+
+        <div className="contenedor">
+
+          <IconUsuarioAdd/>
+
+          <h3 className='h3'>Registro</h3>
           <Input
             name="Correo electrónico"
             type="email"
@@ -32,8 +39,7 @@ function Registration() {
           </CustomLink>
         </div>
       </form>
-    </div>
-  );
+    );
 }
 
 export default Registration;
