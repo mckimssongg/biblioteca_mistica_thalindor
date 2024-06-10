@@ -1,6 +1,23 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
+import ButtonDelete from '../../components/UI/Button/Delete/ButtonDelete';
 
 function ManagePersonalLibrary() {
+  const [books, setBooks] = useState(() => {
+    const savedBooks = localStorage.getItem('books');
+    return savedBooks ? JSON.parse(savedBooks) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('books', JSON.stringify(books));
+  }, [books]);
+
+  const handleDelete = (id) => {
+    setBooks(books.filter(book => book.id !== id));
+  };
+  
+
   return (
     <>
       <h1>Tú lista</h1>
@@ -8,77 +25,26 @@ function ManagePersonalLibrary() {
       <table className="table table-hover">
         <thead>
           <tr>
-            <th scope="col">Type</th>
-            <th scope="col">Column heading</th>
-            <th scope="col">Column heading</th>
-            <th scope="col">Column heading</th>
+            <th scope="col">Nombre del Libro</th>
+            <th scope="col">Eliminar</th>
           </tr>
         </thead>
+
         <tbody>
-          <tr className="table-active">
-            <th scope="row">Active</th>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-          </tr>
-          <tr>
-            <th scope="row">Default</th>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-          </tr>
-          <tr className="table-primary">
-            <th scope="row">Primary</th>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-          </tr>
-          <tr className="table-secondary">
-            <th scope="row">Secondary</th>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-          </tr>
-          <tr className="table-success">
-            <th scope="row">Success</th>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-          </tr>
-          <tr className="table-danger">
-            <th scope="row">Danger</th>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-          </tr>
-          <tr className="table-warning">
-            <th scope="row">Warning</th>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-          </tr>
-          <tr className="table-info">
-            <th scope="row">Info</th>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-          </tr>
-          <tr className="table-light">
-            <th scope="row">Light</th>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-          </tr>
-          <tr className="table-dark">
-            <th scope="row">Dark</th>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-          </tr>
+          {books.map(book => (
+            <tr key={book.id}>
+              <td>
+                <Link to={`/book/${book.id}`}>{book.title}</Link>
+              </td>
+              <td>
+                <ButtonDelete onDelete={() => handleDelete(book.id)} />
+              </td>
+            </tr>
+          ))}
         </tbody>
-    </table>
+      </table>
     </>
-  )
+  );
 }
 
-export default ManagePersonalLibrary
+export default ManagePersonalLibrary;

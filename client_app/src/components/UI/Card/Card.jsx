@@ -1,9 +1,9 @@
 import React from 'react';
 import '../Card/StyleCard.css';
 
-export default function Card({ title, subtitle, icon, link }) {
+export default function Card({id, title, subtitle, icon, link }) {
   return (
-    <div className="card mb-3 custom-card">
+    <div className="card mb-3 custom-card" data-id={id}>
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
         <h6 className="card-subtitle text-muted">{subtitle}</h6>

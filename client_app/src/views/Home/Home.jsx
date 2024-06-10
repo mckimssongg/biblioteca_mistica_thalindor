@@ -1,8 +1,7 @@
 import React from 'react'
 import Carousel from '../../components/UI/Carousel/Carousel'
 import Card from '../../components/UI/Card/Card'
-import Fantasy from '../../components/UI/Iconos/Usuario/Book/Fantasy'
-
+import Fantasy from '../../components/UI/Iconos/Book/Fantasy'
 
 function Home() {
   return (

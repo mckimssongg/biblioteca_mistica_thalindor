@@ -1,8 +1,8 @@
 import React from 'react';
 import Card from '../Card/Card';
-import Love from '../Iconos/Usuario/Book/Love';
-import Terror from '../Iconos/Usuario/Book/Terror';
-import './StyleCarousel.css'; // Importa el archivo de estilo del carousel
+import Love from '../Iconos/Book/Love';
+import Terror from '../Iconos/Book/Terror';
+import './StyleCarousel.css';
 
 export default function Carousel() {
   return (
