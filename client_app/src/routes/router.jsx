@@ -1,6 +1,6 @@
 
-import MainLayout from './layouts/MainLayout.jsx';
-import { Login, Home, SearchPage, Registration, ErrorPage, ManagePersonalLibrary } from './views';
+import MainLayout from '../layouts/MainLayout';
+import { Login, Home, SearchPage, Registration, ErrorPage, ManagePersonalLibrary } from '../views/index';
 
 export const routes = [
     {
@@ -10,14 +10,17 @@ export const routes = [
         {
           path: "/",
           element: <Home />,
+          private: false,
         },
         {
           path: "/search",
           element: <SearchPage />,
+          private: false,
         },
         {
           path: "/managePersonalLibrary",
           element: <ManagePersonalLibrary />,
+          private: false,
         },
         
       ],

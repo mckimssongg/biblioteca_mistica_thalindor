@@ -1,6 +1,6 @@
 import React, { Suspense, useEffect } from 'react'
 import { BrowserRouter } from 'react-router-dom'
-import { AppRouter } from './routerConfig'
+import { AppRouter } from './routes/routerConfig'
 import SpinnerComponent from './components/Spinner/SpinnerComponent'
 
 function App() {
