@@ -6,26 +6,6 @@ from flask_jwt_extended import jwt_required, get_jwt_identity
 
 library_bp = Blueprint('library', __name__)
 
-@library_bp.route('/books', methods=['GET'])
-def get_books():
-    books = Book.query.all()
-    
-    result = []
-    for book in books:
-        result.append({
-            'titulo': book.titulo,
-            'autores': [author.nombre for author in book.autores],
-            'editorial': book.editorial,
-            'fecha_publicacion': book.fecha_publicacion,
-            'isbn': book.isbn,
-            'numero_paginas': book.numero_paginas,
-            'genero': [genre.descripcion for genre in book.generos],
-            'idioma': book.idioma
-        })
-    
-    return jsonify(result), 200
-
-
 @library_bp.route('/personal_library', methods=['GET'])
 @jwt_required()
 def get_personal_library():

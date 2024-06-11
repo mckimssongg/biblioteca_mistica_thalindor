@@ -15,5 +15,10 @@ def create_app(config_class=Config):
     # Registrar blueprints
     app.register_blueprint(auth_bp, url_prefix='/api/auth')
     app.register_blueprint(library_bp, url_prefix='/api/library')
+    
+    #health check
+    @app.route('/health')
+    def health():
+        return 'Healthy', 200
 
     return app
