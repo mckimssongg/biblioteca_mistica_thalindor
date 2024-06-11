@@ -2,11 +2,13 @@ version: '3.8'
 services:
   web:
     build: .
-    command: python run.py
+    command: flask run --host=0.0.0.0
     volumes:
       - .:/api
     ports:
       - "5000:5000"
+    env_file:
+      - .env
     depends_on:
       - db
   db:
@@ -15,3 +17,5 @@ services:
       - POSTGRES_DB=library
       - POSTGRES_USER=user
       - POSTGRES_PASSWORD=password
+    ports:
+      - "5432:5432"
