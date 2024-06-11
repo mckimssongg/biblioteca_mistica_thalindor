@@ -1,8 +1,12 @@
 /* Estilos comunes para contenedores */
+@import url("https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap");
+
 .login-container {
     height: 100vh;
     position: relative;
+    font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
 }
+
 
 .common-container {
     width: 550px;
