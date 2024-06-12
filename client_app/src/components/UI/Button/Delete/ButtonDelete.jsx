@@ -3,7 +3,7 @@ import Delete from '../../Iconos/BookList/Delete';
 
 export default function BottonDelete({ onDelete }) {
   return (
-    <button onClick={onDelete}>
+    <button type="button" class="btn btn-outline-light" onClick={onDelete}>
       <Delete />
     </button>
   )

@@ -1,0 +1,32 @@
+.specific-book-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Dos columnas: la primera ocupa 1 fracción, la segunda 2 fracciones */
+    gap: 20px; /* Espacio entre columnas */
+    padding: 20px;
+  }
+  
+  .column-one {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    
+    border-radius: 5px;
+    padding: 20px;
+    
+  }
+  
+  .column-two {
+    display: grid;
+    grid-template-rows: repeat(5, auto); /* Tres filas con altura automática */
+    gap: 10px; /* Espacio entre filas */
+  }
+  
+  .row-one,
+  .row-two {
+    
+    border-radius: 5px;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea si no caben en una sola */
+    align-items: center; /* Alinea verticalmente los elementos dentro de row-two */
+  }
+  

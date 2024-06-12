@@ -32,7 +32,7 @@ export default function ToggleEye() {
 
             {isHovered && (
                 <span>
-                    {isEye ? 'Visto' : 'Pendiente'}
+                    {isEye ? 'Pendiente' : 'Visto'}
                 </span>
             )}
         </div>

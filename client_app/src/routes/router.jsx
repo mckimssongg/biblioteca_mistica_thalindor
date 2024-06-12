@@ -1,6 +1,6 @@
 
 import MainLayout from '../layouts/MainLayout';
-import { Login, Home, SearchPage, Registration, ErrorPage, ManagePersonalLibrary } from '../views/index';
+import { Login, Home, SearchPage, Registration, ErrorPage, ManagePersonalLibrary, SpecificBook } from '../views/index';
 
 export const routes = [
     {
@@ -20,6 +20,11 @@ export const routes = [
         {
           path: "/managePersonalLibrary",
           element: <ManagePersonalLibrary />,
+          private: false,
+        },
+        {
+          path: "/specificBook",
+          element: <SpecificBook/>,
           private: false,
         },
         
