@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import '../SpecificBook/StyleSpecificBook.css';
 import CardSpecific from '../../components/SpecificBook/CardSpecific';
 import Descripcion from '../../components/SpecificBook/Descripcion';
 import Generos from '../../components/SpecificBook/Generos';
 import Informacion from '../../components/SpecificBook/Informacion';
-
 import ButtonAdd from '../../components/SpecificBook/ButtonAdd';
 
 export default function SpecificBook() {
@@ -25,49 +23,61 @@ export default function SpecificBook() {
   }, [books]);
 
   const handleAddBook = (book) => {
-    if (!books.find(b => b.id === book.id)) {
+    if (!books.find((b) => b.id === book.id)) {
       setBooks([...books, book]);
     }
   };
 
   return (
-    <div className="specific-book-grid">
-      <div className="column-one">
-        <div className="row-one">
-          <CardSpecific
-            subtitle={'Autor: '}
-          />
-        </div>
-      </div>
-
-      <div className="column-two">
-        <div className="row-two">
-          <p><strong>Título:</strong> {titulo}</p>
+    <div className="container mt-4">
+      <div className="row specific-book-grid">
+        {/* Primera columna */}
+        <div className="col-md-3">
+          <div className="card border rounded p-3">
+            <CardSpecific subtitle={'Autor: '} />
+          </div>
         </div>
 
-        <div className="row-two">
-          <Descripcion
-            texto={'Erase una vez'}
-          /> 
-        </div>
+        {/* Segunda columna */}
+        <div className="col-md-9">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="card border rounded p-3">
+                <p>
+                  <strong>Título:</strong> {titulo}
+                </p>
+              </div>
+            </div>
 
-        <div className="row-two">
-          <Generos
-            generos={generos}
-          /> 
-        </div>
+            <div className="col-md-12">
+              <div className="card border rounded p-3">
+                <Descripcion texto={'Erase una vez'} />
+              </div>
+            </div>
 
-        <div className="row-two">
-          <Informacion
-            No_paginas={223}
-            editorial={'Book'}
-            idiomas={'Español'}
-            fecha_publicacion={2000}
-          />
-        </div>
+            <div className="col-md-12">
+              <div className="card border rounded p-3">
+                <Generos generos={generos} />
+              </div>
+            </div>
 
-        <div className="row-two">
-          <ButtonAdd book={libro} onAdd={handleAddBook} />
+            <div className="col-md-12">
+              <div className="card border rounded p-3">
+                <Informacion
+                  No_paginas={223}
+                  editorial={'Book'}
+                  idiomas={'Español'}
+                  fecha_publicacion={2000}
+                />
+              </div>
+            </div>
+
+            <div className="col-md-12">
+              <div className="card border rounded p-3">
+                <ButtonAdd book={libro} onAdd={handleAddBook} />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

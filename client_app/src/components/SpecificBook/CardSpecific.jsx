@@ -1,5 +1,5 @@
 import React from 'react';
-import '../SpecificBook/StyleCardSpecific.css';
+
 import ISBN from './ISBN';
 
 export default function CardSpecific({id, subtitle }) {

@@ -1,9 +1,0 @@
-.informacion {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .informacion-item {
-    margin-right: 15px;
-    white-space: nowrap; /* Evita que los elementos se rompan en varias líneas */
-  }  

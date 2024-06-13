@@ -1,5 +1,5 @@
 import React from 'react'
-import '../SpecificBook/StyleInformacion.css'
+
 import ToggleEye from '../UI/Button/ToggleEye/ToggleEye'
 
 export default function Informacion({No_paginas, editorial, idiomas, fecha_publicacion}) {
