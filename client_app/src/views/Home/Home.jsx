@@ -1,34 +1,25 @@
-import React, { useEffect } from 'react';
-
-import Carousel from '../../components/UI/Carousel/Carousel'
-import Card from '../../components/UI/Card/Card'
+import React from 'react';
+import CarouselCategorias from '../../components/UI/Carousel/CarouselCategorias';
+import CarouselPopulares from '../../components/UI/Carousel/CarouselPopulares';
 
 function Home() {
-  /*useEffect(() => {
-    // Desactivar scroll cuando el componente se monta
-    document.body.style.overflow = 'hidden';
-
-    // Limpiar al desmontar el componente
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, []);*/
-
   return (
-    <div>Home
-      <h1>Categorias</h1>
-      <Carousel/>
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-md-10 mx-auto">
+          <h4>Categorias</h4>
+          <CarouselCategorias />
+        </div>
+      </div>
 
-      <h1>Populares</h1>
-      <Card
-        title={'Libro 1'}
-        subtitle={'Autor 1'}
-        link={'#'}
-      />
+      <div className="row">
+        <div className="col-md-10 mx-auto">
+          <h4>Populares</h4>
+          <CarouselPopulares />
+        </div>
+      </div>
     </div>
-
-    
-  )
+  );
 }
 
-export default Home
+export default Home;
