@@ -12,7 +12,7 @@ export default function Informacion({ No_paginas, editorial, idiomas, fecha_publ
         <div className='col-md-6 d-flex align-items-center'>
           <p className='mb-0 me-2 fs-6'><strong>Idiomas:</strong> {idiomas}</p>
           <p className='mb-0 me-2 fs-6'><strong>Fecha de publicación:</strong> {fecha_publicacion}</p>
-          <p className='mb-0'><ToggleEye /></p>
+          <div className='mb-0'><ToggleEye /></div>
         </div>
       </div>
     </div>
