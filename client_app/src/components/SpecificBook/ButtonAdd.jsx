@@ -1,4 +1,5 @@
 import React from 'react';
+import Add from '../UI/Icon/ButtonAdd/Add';
 
 const ButtonAdd = ({ book, onAdd }) => {
   const handleAdd = () => {
@@ -6,9 +7,11 @@ const ButtonAdd = ({ book, onAdd }) => {
   };
 
   return (
-    <button onClick={handleAdd} class="btn btn-outline-dark" type="button">
-      Agregar +
-    </button>
+    <div className="d-flex justify-content-end">
+      <button onClick={handleAdd} className="btn btn-outline-dark btn-sm" type="button">
+        Agregar <Add/>
+      </button>
+    </div>
   );
 };
 
