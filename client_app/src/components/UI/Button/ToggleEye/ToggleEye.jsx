@@ -1,40 +1,23 @@
 import React, { useState } from 'react';
-import Eye from '../../Iconos/BookList/Eye';
-import EyeSlash from '../../Iconos/BookList/EyeSlash'; 
+import Eye from '../../Icon/ButtonEye/Eye';
+import EyeSlash from '../../Icon/ButtonEye/EyeSlash';
+import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 export default function ToggleEye() {
+  const [isEye, setIsEye] = useState(true);
 
-    const [isEye, setIsEye] = useState(true);
-    const [isHovered, setIsHovered] = useState(false);
-
-    const handleClick = () => {
-        setIsEye(!isEye);
-    };
-
-    const handleMouseEnter = () => {
-        setIsHovered(true);
-    };
-
-    const handleMouseLeave = () => {
-        setIsHovered(false);
-    };
+  const handleClick = () => {
+    setIsEye(!isEye);
+  };
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center', position: 'relative' }}>
-            <div
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-                onClick={handleClick}
-                style={{ cursor: 'pointer' }}
-            >
-                {isEye ? <Eye /> : <EyeSlash />}
-            </div>
-
-            {isHovered && (
-                <span>
-                    {isEye ? 'Pendiente' : 'Visto'}
-                </span>
-            )}
-        </div>
-  )
+    <OverlayTrigger
+      placement="top"
+      overlay={<Tooltip>{isEye ? 'Pendiente' : 'Visto'}</Tooltip>}
+    >
+      <div onClick={handleClick} style={{ cursor: 'pointer' }}>
+        {isEye ? <Eye /> : <EyeSlash />}
+      </div>
+    </OverlayTrigger>
+  );
 }

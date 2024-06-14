@@ -4,6 +4,7 @@ import Descripcion from '../../components/SpecificBook/Descripcion';
 import Generos from '../../components/SpecificBook/Generos';
 import Informacion from '../../components/SpecificBook/Informacion';
 import ButtonAdd from '../../components/SpecificBook/ButtonAdd';
+import ToggleEye from '../../components/UI/Button/ToggleEye/ToggleEye';
 
 export default function SpecificBook() {
   const generos = ['Fantasía', 'Aventura', 'Drama'];
@@ -69,6 +70,7 @@ export default function SpecificBook() {
                   idiomas={'Español'}
                   fecha_publicacion={2000}
                 />
+                
               </div>
             </div>
 

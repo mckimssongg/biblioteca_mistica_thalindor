@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ButtonDelete from '../../components/UI/Button/Delete/ButtonDelete';
+import ToggleEye from '../../components/UI/Button/ToggleEye/ToggleEye';
 
 function ManagePersonalLibrary() {
   const [books, setBooks] = useState(() => {
@@ -17,13 +18,14 @@ function ManagePersonalLibrary() {
   };
 
   return (
-    <>
-      <h1>Tu Lista</h1>
+    <div className="container mt-4">
+      <h1 className="mb-4">Tu Lista</h1>
 
       <table className="table table-hover">
-        <thead>
+        <thead className="table-dark">
           <tr>
             <th scope="col">Nombre del Libro</th>
+            <th scope="col"></th>
             <th scope="col"></th>
           </tr>
         </thead>
@@ -31,8 +33,12 @@ function ManagePersonalLibrary() {
         <tbody>
           {books.map(book => (
             <tr key={book.id}>
-              <td class="lead">
-                <Link to={`/specificBook/${book.id}`}>{book.title}</Link>
+              <td>
+                <Link to={`/specificBook/${book.id}`} className="text-reset text-decoration-none">{book.title}</Link>
+              </td>
+
+              <td>
+                <ToggleEye />
               </td>
     
               <td>
@@ -42,7 +48,7 @@ function ManagePersonalLibrary() {
           ))}
         </tbody>
       </table>
-    </>
+    </div>
   );
 }
 
